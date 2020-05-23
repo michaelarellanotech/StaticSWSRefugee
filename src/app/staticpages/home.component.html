@@ -1,0 +1,40 @@
+<div class="p-grid ui-fluid home-page">
+  <div class="p-col-12 p-xl-8">
+    <div class="p-grid">
+      <div class="p-col-12">
+        <img src="assets/images/stripb.jpg" width="100%">
+      </div>
+      <div class="p-col-12 p-xl-5">
+        <p class="page-text">
+          Each year, some 4,000 people who have
+          experienced persecution or other serious human rights abuses settle in New South
+          Wales. Common refugee experiences include torture, war or civil unrest, the loss
+          of family and friends through violence, and prolonged periods of deprivation.
+          These experiences can have major implications on health status and the delivery
+          of health care.<br><br>
+          The NSW Refugee Health Service was set up by the NSW Department of Health in
+          1999 to help meet some of these challenges. We aim to promote the health of
+          people from a refugee background living in NSW by assisting refugees, and the
+          health professionals who work with them.
+        </p>
+      </div>
+      <div class="p-col-12 p-xl-7">
+        <p-carousel [value]="pics" styleClass="custom-carousel" [numVisible]="1" [numScroll]="1" [circular]="true"
+          [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+          <!-- <p-header>
+            <h3>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h3>
+          </p-header> -->
+          <ng-template let-pics pTemplate="item">
+            <div class="carousel-details">
+              <div class="p-grid p-nogutter">
+                <div class="p-col-12">
+                  <img src="assets/images/{{pics}}" width="100%" />
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</div>

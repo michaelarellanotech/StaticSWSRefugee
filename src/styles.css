@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+.header-title {
+  font-size: 18px;
+  color: white;
+}
+.header-title.desktop {
+  display: inline-block;
+  margin-left: 60px;
+}
+.header-title.mobile {
+  width: 60%;
+  font-size: 14px;
+  display: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.layout-wrapper .layout-topbar .layout-topbar-logo img {
+  height: 50px !important;
+}
+
+@media (max-width: 615px) {
+  .header-title.desktop {
+    display: none;
+  }
+
+  .header-title.mobile {
+    display: inline-block;
+  }
+
+  .layout-topbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .ui-toast.ui-widget.ui-toast-top-center {
+    width: 250px !important;
+  }
+
+  .layout-topbar-logo {
+    display: none !important;
+  }
+}
+@media (max-width: 896px) {
+  .layout-wrapper .layout-main {
+    padding-top: 70px !important;
+  }
+}
+/* You can add global styles to this file, and also import other style files */
+/* Block UI Wrapper (Backdrop) */
+div.block-ui-wrapper {
+  background-color: rgba(229, 228, 230, 0.6);
+}
+
+/* Spinner */
+div.block-ui-wrapper .loader {
+  border-color: #fff;
+  /*$brand-orange;   Circle color */
+  border-left-color: #0772B3;
+}
+
+div.block-ui-spinner .message {
+  color: #0772B3;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  /* Loading text color */
+}
+
+/*Fix conflict with PrimgNg*/
+div.block-ui-spinner > .loader {
+  left: 0 !important;
+}
+
+.layout-topbar-logo {
+  margin: 0 0 0 10px !important;
+}
+
+@media (max-width: 510px) {
+  .header-title.desktop {
+    display: none;
+  }
+
+  .header-title.mobile {
+    display: inline-block;
+  }
+
+  .layout-topbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .ui-toast.ui-widget.ui-toast-top-center {
+    width: 250px !important;
+  }
+}
+.nav-button {
+  padding-right: 15px;
+}
+
+.ui-panel .ui-panel-titlebar {
+  background-color: #f4f4f4 !important;
+}
+
+.page-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body {
+  background: #FFF !important;
+}
+
+.layout-wrapper {
+  background: #f4f4f4 !important;
+}
+
+.layout-footer {
+  border-bottom: none;
+}
+
+.layout-wrapper .layout-menu-container .menu-scroll-content {
+  width: 325px;
+}
+
+@media (min-width: 897px) {
+  .layout-wrapper.layout-static .layout-menu-container {
+    width: 325px;
+  }
+}
+@media (max-width: 896px) {
+  .layout-wrapper .layout-menu-container {
+    width: 325px;
+    left: -325px;
+  }
+}
+@media (min-width: 897px) {
+  .layout-wrapper.layout-static.layout-static-inactive .layout-menu-container {
+    left: -325px;
+  }
+}
+@media (min-width: 897px) {
+  .layout-wrapper.layout-static .layout-main {
+    margin-left: 325px;
+  }
+}
+@media (min-width: 897px) {
+  .layout-wrapper.layout-static .layout-footer {
+    margin-left: 325px;
+  }
+}
+.footer-icons img {
+  border: 1px solid #ddd;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.layout-footer img {
+  height: 40px;
+}
+
+.footer-logo1 {
+  width: 180px;
+  height: auto !important;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-logo2 {
+  width: 180px;
+  height: auto !important;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .layout-footer .footer-icons {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .custom-carousel .ui-carousel-container button {
+    display: none;
+  }
+}
