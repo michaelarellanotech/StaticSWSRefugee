@@ -102,7 +102,7 @@ div.block-ui-spinner > .loader {
   background-color: #f4f4f4 !important;
 }
 
-.page-text {
+p, ul, li {
   font-size: 14px;
   line-height: 1.5;
 }
@@ -120,33 +120,33 @@ body {
 }
 
 .layout-wrapper .layout-menu-container .menu-scroll-content {
-  width: 325px;
+  width: 340px;
 }
 
 @media (min-width: 897px) {
   .layout-wrapper.layout-static .layout-menu-container {
-    width: 325px;
+    width: 340px;
   }
 }
 @media (max-width: 896px) {
   .layout-wrapper .layout-menu-container {
-    width: 325px;
-    left: -325px;
+    width: 340px;
+    left: -340px;
   }
 }
 @media (min-width: 897px) {
   .layout-wrapper.layout-static.layout-static-inactive .layout-menu-container {
-    left: -325px;
+    left: -340px;
   }
 }
 @media (min-width: 897px) {
   .layout-wrapper.layout-static .layout-main {
-    margin-left: 325px;
+    margin-left: 340px;
   }
 }
 @media (min-width: 897px) {
   .layout-wrapper.layout-static .layout-footer {
-    margin-left: 325px;
+    margin-left: 340px;
   }
 }
 .footer-icons img {
@@ -181,4 +181,7 @@ body {
   .custom-carousel .ui-carousel-container button {
     display: none;
   }
+}
+h1 {
+  color: #AD174F;
 }

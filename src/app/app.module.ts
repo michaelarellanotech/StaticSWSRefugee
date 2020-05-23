@@ -104,6 +104,7 @@ import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
 import { MenuService } from './app.menu.service';
 import { HomeComponent } from './staticpages/home.component';
+import { PurposeComponent } from './staticpages/purpose.component';
 
 @NgModule({
     imports: [
@@ -206,7 +207,8 @@ import { HomeComponent } from './staticpages/home.component';
         AppAccessdeniedComponent,
         AppLoginComponent,
 
-        HomeComponent
+        HomeComponent,
+        PurposeComponent
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

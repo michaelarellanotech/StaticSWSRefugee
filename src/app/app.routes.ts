@@ -19,11 +19,13 @@ import { AppErrorComponent } from './pages/app.error.component';
 import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
 import { AppLoginComponent } from './pages/app.login.component';
 import { HomeComponent } from './staticpages/home.component';
+import { PurposeComponent } from './staticpages/purpose.component';
 
 export const routes: Routes = [
     { path: '', component: AppMainComponent,
         children: [
             { path: '', component: HomeComponent },
+            { path: 'about/purpose', component: PurposeComponent },
             // { path: '', component: DashboardDemoComponent },
             { path: 'components/sample', component: SampleDemoComponent },
             { path: 'components/forms', component: FormsDemoComponent },

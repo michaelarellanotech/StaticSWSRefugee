@@ -642,15 +642,15 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Development\Refugee\node_modules\primeng\resources\primeng.min.css */"./node_modules/primeng/resources/primeng.min.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\@fullcalendar\core\main.min.css */"./node_modules/@fullcalendar/core/main.min.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\@fullcalendar\daygrid\main.min.css */"./node_modules/@fullcalendar/daygrid/main.min.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\@fullcalendar\timegrid\main.min.css */"./node_modules/@fullcalendar/timegrid/main.min.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\quill\dist\quill.snow.css */"./node_modules/quill/dist/quill.snow.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\primeicons\primeicons.css */"./node_modules/primeicons/primeicons.css");
-__webpack_require__(/*! C:\Development\Refugee\node_modules\primeflex\primeflex.css */"./node_modules/primeflex/primeflex.css");
-__webpack_require__(/*! C:\Development\Refugee\src\assets\demo\css\codehighlight.css */"./src/assets/demo/css/codehighlight.css");
-module.exports = __webpack_require__(/*! C:\Development\Refugee\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\primeng\resources\primeng.min.css */"./node_modules/primeng/resources/primeng.min.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\@fullcalendar\core\main.min.css */"./node_modules/@fullcalendar/core/main.min.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\@fullcalendar\daygrid\main.min.css */"./node_modules/@fullcalendar/daygrid/main.min.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\@fullcalendar\timegrid\main.min.css */"./node_modules/@fullcalendar/timegrid/main.min.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\quill\dist\quill.snow.css */"./node_modules/quill/dist/quill.snow.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\primeicons\primeicons.css */"./node_modules/primeicons/primeicons.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\node_modules\primeflex\primeflex.css */"./node_modules/primeflex/primeflex.css");
+__webpack_require__(/*! C:\Development\SWSRefugee\src\assets\demo\css\codehighlight.css */"./src/assets/demo/css/codehighlight.css");
+module.exports = __webpack_require__(/*! C:\Development\SWSRefugee\src\styles.css */"./src/styles.css");
 
 
 /***/ })

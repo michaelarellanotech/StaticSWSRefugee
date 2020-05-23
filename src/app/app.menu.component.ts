@@ -38,33 +38,33 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/']},
             {
-                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
+                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['about'],
                 items: [
-                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['/']},
-                    { label: 'History', icon: 'pi pi-list', routerLink: ['/'] },
-                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['/'] },
-                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['/'] },
-                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['/'],
+                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['about/purpose']},
+                    { label: 'History', icon: 'pi pi-list', routerLink: ['about/'] },
+                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['about/'] },
+                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['about/'] },
+                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['about/'],
                         items: [
-                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['/'] },
-                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['/'] }
+                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] },
+                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] }
                         ]
                     }
                 ]
             },
-            { label: 'FAQs', icon: 'pi pi-question', routerLink: ['/']},
-            { label: 'Asylum Seeker Advocacy & GP Clinics', icon: 'pi pi-heart', routerLink: ['/']}, 
-            { label: 'Refugee Health Nurse Program', icon: 'pi pi-plus-circle', routerLink: ['/']}, 
-            { label: 'Disability Support Team', icon: 'pi pi-users', routerLink: ['/']}, 
-            { label: 'Communications Health Information', icon: 'pi pi-comment', routerLink: ['/']}, 
-            { label: 'Education & Training', icon: 'pi pi-pencil', routerLink: ['/']}, 
-            { label: 'Projects', icon: 'pi pi-cog', routerLink: ['/']}, 
-            { label: 'Resources', icon: 'pi pi-globe', routerLink: ['/']}, 
-            { label: 'GP Information', icon: 'pi pi-info-circle', routerLink: ['/']}, 
-            { label: 'Refugee Health Networks', icon: 'pi pi-plus-circle', routerLink: ['/']}, 
-            { label: 'Placements, Employment, Volunteering', icon: 'pi pi-user-edit', routerLink: ['/']}, 
-            { label: 'Links', icon: 'pi pi-share-alt', routerLink: ['/']}, 
-            { label: 'Contact Us', icon: 'pi pi-comments', routerLink: ['/']}, 
+            { label: 'FAQs', icon: 'pi pi-question', routerLink: ['faqs']},
+            { label: 'Asylum Seeker Advocacy & GP Clinics', icon: 'pi pi-heart', routerLink: ['a']}, 
+            { label: 'Refugee Health Nurse Program', icon: 'pi pi-plus-circle', routerLink: ['a']}, 
+            { label: 'Disability Support Team', icon: 'pi pi-users', routerLink: ['a']}, 
+            { label: 'Communications Health Information', icon: 'pi pi-comment', routerLink: ['a']}, 
+            { label: 'Education & Training', icon: 'pi pi-pencil', routerLink: ['a']}, 
+            { label: 'Projects', icon: 'pi pi-cog', routerLink: ['a']}, 
+            { label: 'Resources', icon: 'pi pi-globe', routerLink: ['a']}, 
+            { label: 'GP Information', icon: 'pi pi-info-circle', routerLink: ['a']}, 
+            { label: 'Refugee Health Networks', icon: 'pi pi-plus-circle', routerLink: ['a']}, 
+            { label: 'Placements, Employment, Volunteering', icon: 'pi pi-user-edit', routerLink: ['a']}, 
+            { label: 'Links', icon: 'pi pi-share-alt', routerLink: ['a']}, 
+            { label: 'Contact Us', icon: 'pi pi-comments', routerLink: ['a']}, 
             // { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/']},
             // {
             //     label: 'Components', icon: 'pi pi-fw pi-star', routerLink: ['/components'],

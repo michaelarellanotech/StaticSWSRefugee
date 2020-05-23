@@ -1,3 +1,5 @@
+$primaryColor:#AD174F;
+
 /* You can add global styles to this file, and also import other style files */
 .header-title {
     font-size: 18px; 
@@ -102,7 +104,7 @@
     background-color: #f4f4f4 !important;
   }
   
-  .page-text {
+  p, ul, li {
     font-size: 14px;
     line-height: 1.5;
   }
@@ -120,47 +122,41 @@
     border-bottom: none
   }
 
-//   .layout-menu-container {
-//       text-align: center;
-//   }
-
-//   .layout-menu-container .layout-menu li {
-//     text-align: left;
-//   }
-
+$menuwidth: 340px;
+$menuwidthpadding: -340px;
 
 .layout-wrapper .layout-menu-container .menu-scroll-content {
-    width: 325px;
+    width: $menuwidth;
   }
   
 @media (min-width: 897px) {
     .layout-wrapper.layout-static .layout-menu-container {
-        width: 325px;
+        width: $menuwidth;
     }
 }
 
 @media (max-width: 896px) {
     .layout-wrapper .layout-menu-container {
-        width: 325px;
-        left: -325px;
+        width: $menuwidth;
+        left: $menuwidthpadding;
     }
 }
 
 @media (min-width: 897px) {
     .layout-wrapper.layout-static.layout-static-inactive .layout-menu-container {
-        left: -325px;
+        left: $menuwidthpadding;
     }
 }
 
 @media (min-width: 897px) {
     .layout-wrapper.layout-static .layout-main {
-        margin-left: 325px;
+        margin-left: $menuwidth;
     }
 }
 
 @media (min-width: 897px) {
     .layout-wrapper.layout-static .layout-footer {
-        margin-left: 325px;
+        margin-left: $menuwidth;
     }
 }
 
@@ -199,4 +195,8 @@
     .custom-carousel .ui-carousel-container button {
         display: none;
     }
+}
+
+h1 {
+    color: $primaryColor;
 }
