@@ -789,7 +789,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"exception-body notfound\">\n    <div class=\"exception-panel\">\n        <div class=\"exception-content\">\n            <img src=\"assets/layout/images/pages/icon-404.svg\">\n            <h1>Page Not Found</h1>\n            <p>Requested resource is not available.</p>\n            <button type=\"button\" [routerLink]=\"['/']\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only\" role=\"button\" aria-disabled=\"false\">\n                <span class=\"ui-button-text ui-c\">Go to Dashboard</span>\n            </button>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"exception-body notfound\">\n    <div class=\"exception-panel\">\n        <div class=\"exception-content\">\n            <img src=\"assets/layout/images/pages/icon-404.svg\">\n            <h1>Page Not Found</h1>\n            <p>Requested resource is not available.</p>\n            <button type=\"button\" [routerLink]=\"['/']\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only\" role=\"button\" aria-disabled=\"false\">\n                <span class=\"ui-button-text ui-c\">Go to Home Page</span>\n            </button>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -2054,89 +2054,89 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }, {
             label: 'About Us',
             icon: 'pi pi-fw pi-star',
-            routerLink: ['/components'],
+            routerLink: ['about'],
             items: [{
               label: 'Purpose',
               icon: 'pi pi-arrow-right',
-              routerLink: ['/']
+              routerLink: ['about/purpose']
             }, {
               label: 'History',
               icon: 'pi pi-list',
-              routerLink: ['/']
+              routerLink: ['about/']
             }, {
               label: 'Achievement',
               icon: 'pi pi-check',
-              routerLink: ['/']
+              routerLink: ['about/']
             }, {
               label: 'Staff',
               icon: 'pi pi-users',
-              routerLink: ['/']
+              routerLink: ['about/']
             }, {
               label: 'Annual Summary',
               icon: 'pi pi-calendar',
-              routerLink: ['/'],
+              routerLink: ['about/'],
               items: [{
                 label: '2016/2017',
                 icon: 'pi pi-calendar-plus',
-                routerLink: ['/']
+                routerLink: ['about/annualsummary']
               }, {
                 label: '2018/2019',
                 icon: 'pi pi-calendar-plus',
-                routerLink: ['/']
+                routerLink: ['about/annualsummary']
               }]
             }]
           }, {
             label: 'FAQs',
             icon: 'pi pi-question',
-            routerLink: ['/']
+            routerLink: ['faqs']
           }, {
             label: 'Asylum Seeker Advocacy & GP Clinics',
             icon: 'pi pi-heart',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Refugee Health Nurse Program',
             icon: 'pi pi-plus-circle',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Disability Support Team',
             icon: 'pi pi-users',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Communications Health Information',
             icon: 'pi pi-comment',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Education & Training',
             icon: 'pi pi-pencil',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Projects',
             icon: 'pi pi-cog',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Resources',
             icon: 'pi pi-globe',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'GP Information',
             icon: 'pi pi-info-circle',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Refugee Health Networks',
             icon: 'pi pi-plus-circle',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Placements, Employment, Volunteering',
             icon: 'pi pi-user-edit',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Links',
             icon: 'pi pi-share-alt',
-            routerLink: ['/']
+            routerLink: ['a']
           }, {
             label: 'Contact Us',
             icon: 'pi pi-comments',
-            routerLink: ['/']
+            routerLink: ['a']
           }];
           this.inlineModel = [{
             label: 'Profile',
@@ -3117,6 +3117,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(
     /*! ./staticpages/home.component */
     "./src/app/staticpages/home.component.ts");
+    /* harmony import */
+
+
+    var _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(
+    /*! ./staticpages/purpose.component */
+    "./src/app/staticpages/purpose.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -3124,7 +3130,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _app_routes__WEBPACK_IMPORTED_MODULE_7__["AppRoutes"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], primeng_accordion__WEBPACK_IMPORTED_MODULE_8__["AccordionModule"], primeng_autocomplete__WEBPACK_IMPORTED_MODULE_9__["AutoCompleteModule"], primeng_breadcrumb__WEBPACK_IMPORTED_MODULE_10__["BreadcrumbModule"], primeng_button__WEBPACK_IMPORTED_MODULE_11__["ButtonModule"], primeng_calendar__WEBPACK_IMPORTED_MODULE_12__["CalendarModule"], primeng_card__WEBPACK_IMPORTED_MODULE_13__["CardModule"], primeng_carousel__WEBPACK_IMPORTED_MODULE_14__["CarouselModule"], primeng_chart__WEBPACK_IMPORTED_MODULE_15__["ChartModule"], primeng_checkbox__WEBPACK_IMPORTED_MODULE_16__["CheckboxModule"], primeng_chips__WEBPACK_IMPORTED_MODULE_17__["ChipsModule"], primeng_codehighlighter__WEBPACK_IMPORTED_MODULE_18__["CodeHighlighterModule"], primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_19__["ConfirmDialogModule"], primeng_colorpicker__WEBPACK_IMPORTED_MODULE_20__["ColorPickerModule"], primeng_contextmenu__WEBPACK_IMPORTED_MODULE_21__["ContextMenuModule"], primeng_dataview__WEBPACK_IMPORTED_MODULE_22__["DataViewModule"], primeng_dialog__WEBPACK_IMPORTED_MODULE_23__["DialogModule"], primeng_dropdown__WEBPACK_IMPORTED_MODULE_24__["DropdownModule"], primeng_editor__WEBPACK_IMPORTED_MODULE_25__["EditorModule"], primeng_fieldset__WEBPACK_IMPORTED_MODULE_26__["FieldsetModule"], primeng_fileupload__WEBPACK_IMPORTED_MODULE_27__["FileUploadModule"], primeng_fullcalendar__WEBPACK_IMPORTED_MODULE_28__["FullCalendarModule"], primeng_galleria__WEBPACK_IMPORTED_MODULE_29__["GalleriaModule"], primeng_inplace__WEBPACK_IMPORTED_MODULE_30__["InplaceModule"], primeng_inputmask__WEBPACK_IMPORTED_MODULE_31__["InputMaskModule"], primeng_inputswitch__WEBPACK_IMPORTED_MODULE_32__["InputSwitchModule"], primeng_inputtext__WEBPACK_IMPORTED_MODULE_33__["InputTextModule"], primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_34__["InputTextareaModule"], primeng_lightbox__WEBPACK_IMPORTED_MODULE_35__["LightboxModule"], primeng_listbox__WEBPACK_IMPORTED_MODULE_36__["ListboxModule"], primeng_megamenu__WEBPACK_IMPORTED_MODULE_37__["MegaMenuModule"], primeng_menu__WEBPACK_IMPORTED_MODULE_38__["MenuModule"], primeng_menubar__WEBPACK_IMPORTED_MODULE_39__["MenubarModule"], primeng_message__WEBPACK_IMPORTED_MODULE_41__["MessageModule"], primeng_messages__WEBPACK_IMPORTED_MODULE_40__["MessagesModule"], primeng_multiselect__WEBPACK_IMPORTED_MODULE_42__["MultiSelectModule"], primeng_orderlist__WEBPACK_IMPORTED_MODULE_43__["OrderListModule"], primeng_organizationchart__WEBPACK_IMPORTED_MODULE_44__["OrganizationChartModule"], primeng_overlaypanel__WEBPACK_IMPORTED_MODULE_45__["OverlayPanelModule"], primeng_paginator__WEBPACK_IMPORTED_MODULE_46__["PaginatorModule"], primeng_panel__WEBPACK_IMPORTED_MODULE_47__["PanelModule"], primeng_panelmenu__WEBPACK_IMPORTED_MODULE_48__["PanelMenuModule"], primeng_password__WEBPACK_IMPORTED_MODULE_49__["PasswordModule"], primeng_picklist__WEBPACK_IMPORTED_MODULE_50__["PickListModule"], primeng_progressbar__WEBPACK_IMPORTED_MODULE_51__["ProgressBarModule"], primeng_radiobutton__WEBPACK_IMPORTED_MODULE_52__["RadioButtonModule"], primeng_rating__WEBPACK_IMPORTED_MODULE_53__["RatingModule"], primeng_scrollpanel__WEBPACK_IMPORTED_MODULE_54__["ScrollPanelModule"], primeng_selectbutton__WEBPACK_IMPORTED_MODULE_55__["SelectButtonModule"], primeng_slidemenu__WEBPACK_IMPORTED_MODULE_56__["SlideMenuModule"], primeng_slider__WEBPACK_IMPORTED_MODULE_57__["SliderModule"], primeng_spinner__WEBPACK_IMPORTED_MODULE_58__["SpinnerModule"], primeng_splitbutton__WEBPACK_IMPORTED_MODULE_59__["SplitButtonModule"], primeng_steps__WEBPACK_IMPORTED_MODULE_60__["StepsModule"], primeng_table__WEBPACK_IMPORTED_MODULE_62__["TableModule"], primeng_tabmenu__WEBPACK_IMPORTED_MODULE_61__["TabMenuModule"], primeng_tabview__WEBPACK_IMPORTED_MODULE_63__["TabViewModule"], primeng_terminal__WEBPACK_IMPORTED_MODULE_64__["TerminalModule"], primeng_tieredmenu__WEBPACK_IMPORTED_MODULE_65__["TieredMenuModule"], primeng_toast__WEBPACK_IMPORTED_MODULE_66__["ToastModule"], primeng_togglebutton__WEBPACK_IMPORTED_MODULE_67__["ToggleButtonModule"], primeng_toolbar__WEBPACK_IMPORTED_MODULE_68__["ToolbarModule"], primeng_tooltip__WEBPACK_IMPORTED_MODULE_69__["TooltipModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_70__["TreeModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_71__["TreeTableModule"], primeng_virtualscroller__WEBPACK_IMPORTED_MODULE_72__["VirtualScrollerModule"]],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_73__["AppComponent"], _app_main_component__WEBPACK_IMPORTED_MODULE_74__["AppMainComponent"], _app_menu_component__WEBPACK_IMPORTED_MODULE_80__["AppMenuComponent"], _app_menuitem_component__WEBPACK_IMPORTED_MODULE_81__["AppMenuitemComponent"], _app_config_component__WEBPACK_IMPORTED_MODULE_75__["AppConfigComponent"], _app_right_menu_component__WEBPACK_IMPORTED_MODULE_82__["AppRightMenuComponent"], _app_topbar_component__WEBPACK_IMPORTED_MODULE_83__["AppTopBarComponent"], _app_footer_component__WEBPACK_IMPORTED_MODULE_84__["AppFooterComponent"], _demo_view_dashboarddemo_component__WEBPACK_IMPORTED_MODULE_85__["DashboardDemoComponent"], _demo_view_sampledemo_component__WEBPACK_IMPORTED_MODULE_86__["SampleDemoComponent"], _demo_view_formsdemo_component__WEBPACK_IMPORTED_MODULE_87__["FormsDemoComponent"], _demo_view_datademo_component__WEBPACK_IMPORTED_MODULE_88__["DataDemoComponent"], _demo_view_panelsdemo_component__WEBPACK_IMPORTED_MODULE_89__["PanelsDemoComponent"], _demo_view_overlaysdemo_component__WEBPACK_IMPORTED_MODULE_90__["OverlaysDemoComponent"], _demo_view_menusdemo_component__WEBPACK_IMPORTED_MODULE_91__["MenusDemoComponent"], _demo_view_messagesdemo_component__WEBPACK_IMPORTED_MODULE_92__["MessagesDemoComponent"], _demo_view_messagesdemo_component__WEBPACK_IMPORTED_MODULE_92__["MessagesDemoComponent"], _demo_view_miscdemo_component__WEBPACK_IMPORTED_MODULE_93__["MiscDemoComponent"], _demo_view_chartsdemo_component__WEBPACK_IMPORTED_MODULE_95__["ChartsDemoComponent"], _demo_view_emptydemo_component__WEBPACK_IMPORTED_MODULE_94__["EmptyDemoComponent"], _demo_view_filedemo_component__WEBPACK_IMPORTED_MODULE_96__["FileDemoComponent"], _demo_view_documentation_component__WEBPACK_IMPORTED_MODULE_97__["DocumentationComponent"], _pages_app_notfound_component__WEBPACK_IMPORTED_MODULE_76__["AppNotfoundComponent"], _pages_app_error_component__WEBPACK_IMPORTED_MODULE_77__["AppErrorComponent"], _pages_app_accessdenied_component__WEBPACK_IMPORTED_MODULE_78__["AppAccessdeniedComponent"], _pages_app_login_component__WEBPACK_IMPORTED_MODULE_79__["AppLoginComponent"], _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__["HomeComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_73__["AppComponent"], _app_main_component__WEBPACK_IMPORTED_MODULE_74__["AppMainComponent"], _app_menu_component__WEBPACK_IMPORTED_MODULE_80__["AppMenuComponent"], _app_menuitem_component__WEBPACK_IMPORTED_MODULE_81__["AppMenuitemComponent"], _app_config_component__WEBPACK_IMPORTED_MODULE_75__["AppConfigComponent"], _app_right_menu_component__WEBPACK_IMPORTED_MODULE_82__["AppRightMenuComponent"], _app_topbar_component__WEBPACK_IMPORTED_MODULE_83__["AppTopBarComponent"], _app_footer_component__WEBPACK_IMPORTED_MODULE_84__["AppFooterComponent"], _demo_view_dashboarddemo_component__WEBPACK_IMPORTED_MODULE_85__["DashboardDemoComponent"], _demo_view_sampledemo_component__WEBPACK_IMPORTED_MODULE_86__["SampleDemoComponent"], _demo_view_formsdemo_component__WEBPACK_IMPORTED_MODULE_87__["FormsDemoComponent"], _demo_view_datademo_component__WEBPACK_IMPORTED_MODULE_88__["DataDemoComponent"], _demo_view_panelsdemo_component__WEBPACK_IMPORTED_MODULE_89__["PanelsDemoComponent"], _demo_view_overlaysdemo_component__WEBPACK_IMPORTED_MODULE_90__["OverlaysDemoComponent"], _demo_view_menusdemo_component__WEBPACK_IMPORTED_MODULE_91__["MenusDemoComponent"], _demo_view_messagesdemo_component__WEBPACK_IMPORTED_MODULE_92__["MessagesDemoComponent"], _demo_view_messagesdemo_component__WEBPACK_IMPORTED_MODULE_92__["MessagesDemoComponent"], _demo_view_miscdemo_component__WEBPACK_IMPORTED_MODULE_93__["MiscDemoComponent"], _demo_view_chartsdemo_component__WEBPACK_IMPORTED_MODULE_95__["ChartsDemoComponent"], _demo_view_emptydemo_component__WEBPACK_IMPORTED_MODULE_94__["EmptyDemoComponent"], _demo_view_filedemo_component__WEBPACK_IMPORTED_MODULE_96__["FileDemoComponent"], _demo_view_documentation_component__WEBPACK_IMPORTED_MODULE_97__["DocumentationComponent"], _pages_app_notfound_component__WEBPACK_IMPORTED_MODULE_76__["AppNotfoundComponent"], _pages_app_error_component__WEBPACK_IMPORTED_MODULE_77__["AppErrorComponent"], _pages_app_accessdenied_component__WEBPACK_IMPORTED_MODULE_78__["AppAccessdeniedComponent"], _pages_app_login_component__WEBPACK_IMPORTED_MODULE_79__["AppLoginComponent"], _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__["HomeComponent"], _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_104__["PurposeComponent"]],
       providers: [{
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_6__["LocationStrategy"],
         useClass: _angular_common__WEBPACK_IMPORTED_MODULE_6__["HashLocationStrategy"]
@@ -3359,6 +3365,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _staticpages_home_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./staticpages/home.component */
     "./src/app/staticpages/home.component.ts");
+    /* harmony import */
+
+
+    var _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! ./staticpages/purpose.component */
+    "./src/app/staticpages/purpose.component.ts");
 
     var routes = [{
       path: '',
@@ -3366,6 +3378,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       children: [{
         path: '',
         component: _staticpages_home_component__WEBPACK_IMPORTED_MODULE_19__["HomeComponent"]
+      }, {
+        path: 'about/purpose',
+        component: _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_20__["PurposeComponent"]
       }, // { path: '', component: DashboardDemoComponent },
       {
         path: 'components/sample',
@@ -6579,6 +6594,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
       styles: ["\n        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .carousel-details > .p-grid {\n            border: 1px solid #b3c2ca;\n            border-radius: 3px;\n            margin: 0.3em;\n            text-align: center;\n            /*padding: 2em 0 2.25em 0;*/\n            padding: 3px;\n        }\n        /* .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-title {\n            font-weight: 700;\n            font-size: 20px;\n            margin-top: 24px;\n        }\n        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-subtitle {\n            margin: 0.25em 0 2em 0;\n        }\n        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button {\n            margin-left: 0.5em;\n        }\n        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button:first-child {\n            margin-left: 0;\n        } */\n        .home-page .ui-carousel.custom-carousel .ui-carousel-dot-icon {\n            width: 16px !important;\n            height: 16px !important;\n            border-radius: 50%;\n        }\n        .home-page .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-start .carousel-details > .p-grid {\n            margin-left: 0.6em;\n        }\n        .home-page .ui-carousel.ui-carousel-horizontal .ui-carousel-content .ui-carousel-item.ui-carousel-item-end .carousel-details > .p-grid {\n            margin-right: 0.6em;\n        }\n    "]
     }), Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])], HomeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/staticpages/purpose.component.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/staticpages/purpose.component.ts ***!
+    \**************************************************/
+
+  /*! exports provided: PurposeComponent */
+
+  /***/
+  function srcAppStaticpagesPurposeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PurposeComponent", function () {
+      return PurposeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var PurposeComponent = function PurposeComponent() {
+      _classCallCheck(this, PurposeComponent);
+    };
+
+    PurposeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      template: "<h1>About RHS - Purpose</h1>\n                <p>The NSW Refugee Health Service aims to protect and promote the health of \n                    refugees and people of refugee-like backgrounds living in NSW.</p>\n                <p>Our Service:</p>\n                <div id=\"div\">\n                        <ul>\n                        <li>provides early health assessments by refugee health nurses for newly  arrived refugees </li>\n                        <li>educates health service providers on refugee health and related issues; </li>\n                        <li>acts as a link between agencies working with refugees and health services; </li>\n                        <li>provides targeted health promotion programs for refugees</li>\n                        <li>provides medical assessments and referrals through GP clinics, particularly for recent arrivals;</li>\n                        <li>facilitates and conducts research in refugee health; and</li>\n                        <li>advocates for health policies and appropriate services for refugees.</li>\n                    </ul></div>"
+    })], PurposeComponent);
     /***/
   },
 

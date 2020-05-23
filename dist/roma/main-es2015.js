@@ -604,7 +604,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"exception-body notfound\">\n    <div class=\"exception-panel\">\n        <div class=\"exception-content\">\n            <img src=\"assets/layout/images/pages/icon-404.svg\">\n            <h1>Page Not Found</h1>\n            <p>Requested resource is not available.</p>\n            <button type=\"button\" [routerLink]=\"['/']\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only\" role=\"button\" aria-disabled=\"false\">\n                <span class=\"ui-button-text ui-c\">Go to Dashboard</span>\n            </button>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"exception-body notfound\">\n    <div class=\"exception-panel\">\n        <div class=\"exception-content\">\n            <img src=\"assets/layout/images/pages/icon-404.svg\">\n            <h1>Page Not Found</h1>\n            <p>Requested resource is not available.</p>\n            <button type=\"button\" [routerLink]=\"['/']\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only\" role=\"button\" aria-disabled=\"false\">\n                <span class=\"ui-button-text ui-c\">Go to Home Page</span>\n            </button>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -1366,33 +1366,33 @@ let AppMenuComponent = class AppMenuComponent {
         this.model = [
             { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/'] },
             {
-                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['/components'],
+                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['about'],
                 items: [
-                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['/'] },
-                    { label: 'History', icon: 'pi pi-list', routerLink: ['/'] },
-                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['/'] },
-                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['/'] },
-                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['/'],
+                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['about/purpose'] },
+                    { label: 'History', icon: 'pi pi-list', routerLink: ['about/'] },
+                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['about/'] },
+                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['about/'] },
+                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['about/'],
                         items: [
-                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['/'] },
-                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['/'] }
+                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] },
+                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] }
                         ]
                     }
                 ]
             },
-            { label: 'FAQs', icon: 'pi pi-question', routerLink: ['/'] },
-            { label: 'Asylum Seeker Advocacy & GP Clinics', icon: 'pi pi-heart', routerLink: ['/'] },
-            { label: 'Refugee Health Nurse Program', icon: 'pi pi-plus-circle', routerLink: ['/'] },
-            { label: 'Disability Support Team', icon: 'pi pi-users', routerLink: ['/'] },
-            { label: 'Communications Health Information', icon: 'pi pi-comment', routerLink: ['/'] },
-            { label: 'Education & Training', icon: 'pi pi-pencil', routerLink: ['/'] },
-            { label: 'Projects', icon: 'pi pi-cog', routerLink: ['/'] },
-            { label: 'Resources', icon: 'pi pi-globe', routerLink: ['/'] },
-            { label: 'GP Information', icon: 'pi pi-info-circle', routerLink: ['/'] },
-            { label: 'Refugee Health Networks', icon: 'pi pi-plus-circle', routerLink: ['/'] },
-            { label: 'Placements, Employment, Volunteering', icon: 'pi pi-user-edit', routerLink: ['/'] },
-            { label: 'Links', icon: 'pi pi-share-alt', routerLink: ['/'] },
-            { label: 'Contact Us', icon: 'pi pi-comments', routerLink: ['/'] },
+            { label: 'FAQs', icon: 'pi pi-question', routerLink: ['faqs'] },
+            { label: 'Asylum Seeker Advocacy & GP Clinics', icon: 'pi pi-heart', routerLink: ['a'] },
+            { label: 'Refugee Health Nurse Program', icon: 'pi pi-plus-circle', routerLink: ['a'] },
+            { label: 'Disability Support Team', icon: 'pi pi-users', routerLink: ['a'] },
+            { label: 'Communications Health Information', icon: 'pi pi-comment', routerLink: ['a'] },
+            { label: 'Education & Training', icon: 'pi pi-pencil', routerLink: ['a'] },
+            { label: 'Projects', icon: 'pi pi-cog', routerLink: ['a'] },
+            { label: 'Resources', icon: 'pi pi-globe', routerLink: ['a'] },
+            { label: 'GP Information', icon: 'pi pi-info-circle', routerLink: ['a'] },
+            { label: 'Refugee Health Networks', icon: 'pi pi-plus-circle', routerLink: ['a'] },
+            { label: 'Placements, Employment, Volunteering', icon: 'pi pi-user-edit', routerLink: ['a'] },
+            { label: 'Links', icon: 'pi pi-share-alt', routerLink: ['a'] },
+            { label: 'Contact Us', icon: 'pi pi-comments', routerLink: ['a'] },
         ];
         this.inlineModel = [
             {
@@ -1801,6 +1801,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _demo_service_nodeservice__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./demo/service/nodeservice */ "./src/app/demo/service/nodeservice.ts");
 /* harmony import */ var _app_menu_service__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./app.menu.service */ "./src/app/app.menu.service.ts");
 /* harmony import */ var _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./staticpages/home.component */ "./src/app/staticpages/home.component.ts");
+/* harmony import */ var _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./staticpages/purpose.component */ "./src/app/staticpages/purpose.component.ts");
+
 
 
 
@@ -2008,7 +2010,8 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _pages_app_error_component__WEBPACK_IMPORTED_MODULE_77__["AppErrorComponent"],
             _pages_app_accessdenied_component__WEBPACK_IMPORTED_MODULE_78__["AppAccessdeniedComponent"],
             _pages_app_login_component__WEBPACK_IMPORTED_MODULE_79__["AppLoginComponent"],
-            _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__["HomeComponent"]
+            _staticpages_home_component__WEBPACK_IMPORTED_MODULE_103__["HomeComponent"],
+            _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_104__["PurposeComponent"]
         ],
         providers: [
             { provide: _angular_common__WEBPACK_IMPORTED_MODULE_6__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_6__["HashLocationStrategy"] },
@@ -2098,6 +2101,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_app_accessdenied_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/app.accessdenied.component */ "./src/app/pages/app.accessdenied.component.ts");
 /* harmony import */ var _pages_app_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/app.login.component */ "./src/app/pages/app.login.component.ts");
 /* harmony import */ var _staticpages_home_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./staticpages/home.component */ "./src/app/staticpages/home.component.ts");
+/* harmony import */ var _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./staticpages/purpose.component */ "./src/app/staticpages/purpose.component.ts");
+
 
 
 
@@ -2122,6 +2127,7 @@ const routes = [
     { path: '', component: _app_main_component__WEBPACK_IMPORTED_MODULE_14__["AppMainComponent"],
         children: [
             { path: '', component: _staticpages_home_component__WEBPACK_IMPORTED_MODULE_19__["HomeComponent"] },
+            { path: 'about/purpose', component: _staticpages_purpose_component__WEBPACK_IMPORTED_MODULE_20__["PurposeComponent"] },
             // { path: '', component: DashboardDemoComponent },
             { path: 'components/sample', component: _demo_view_sampledemo_component__WEBPACK_IMPORTED_MODULE_2__["SampleDemoComponent"] },
             { path: 'components/forms', component: _demo_view_formsdemo_component__WEBPACK_IMPORTED_MODULE_3__["FormsDemoComponent"] },
@@ -4118,6 +4124,45 @@ HomeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     }),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])
 ], HomeComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/staticpages/purpose.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/staticpages/purpose.component.ts ***!
+  \**************************************************/
+/*! exports provided: PurposeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PurposeComponent", function() { return PurposeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let PurposeComponent = class PurposeComponent {
+};
+PurposeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `<h1>About RHS - Purpose</h1>
+                <p>The NSW Refugee Health Service aims to protect and promote the health of 
+                    refugees and people of refugee-like backgrounds living in NSW.</p>
+                <p>Our Service:</p>
+                <div id="div">
+                        <ul>
+                        <li>provides early health assessments by refugee health nurses for newly  arrived refugees </li>
+                        <li>educates health service providers on refugee health and related issues; </li>
+                        <li>acts as a link between agencies working with refugees and health services; </li>
+                        <li>provides targeted health promotion programs for refugees</li>
+                        <li>provides medical assessments and referrals through GP clinics, particularly for recent arrivals;</li>
+                        <li>facilitates and conducts research in refugee health; and</li>
+                        <li>advocates for health policies and appropriate services for refugees.</li>
+                    </ul></div>`
+    })
+], PurposeComponent);
 
 
 
