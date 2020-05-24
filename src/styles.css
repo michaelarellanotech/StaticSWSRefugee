@@ -19,6 +19,10 @@
   height: 50px !important;
 }
 
+.layout-topbar-logo.small {
+  display: none !important;
+}
+
 @media (max-width: 615px) {
   .header-title.desktop {
     display: none;
@@ -37,8 +41,12 @@
     width: 250px !important;
   }
 
-  .layout-topbar-logo {
+  .layout-topbar-logo.normal {
     display: none !important;
+  }
+
+  .layout-topbar-logo.small {
+    display: inline-block !important;
   }
 }
 @media (max-width: 896px) {

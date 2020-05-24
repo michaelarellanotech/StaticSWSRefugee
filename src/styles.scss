@@ -19,8 +19,17 @@ $primaryColor:#AD174F;
     }
 }
 
-.layout-wrapper .layout-topbar .layout-topbar-logo img {
-    height: 50px !important;
+.layout-wrapper .layout-topbar {
+    .layout-topbar-logo {
+        img {
+            height: 50px !important;
+        }
+    }
+
+}
+
+.layout-topbar-logo.small {
+    display: none !important;
 }
 
 @media (max-width: 615px) { 
@@ -37,9 +46,12 @@ $primaryColor:#AD174F;
     .ui-toast.ui-widget.ui-toast-top-center {
         width: 250px !important;
     }
-    .layout-topbar-logo {
+    .layout-topbar-logo.normal {
         display: none !important;
     }   
+    .layout-topbar-logo.small {
+        display: inline-block !important;
+    }
   }
 
   @media (max-width: 896px) { 
@@ -84,6 +96,7 @@ $primaryColor:#AD174F;
     .header-title.desktop {
          display: none;
     }
+
     .header-title.mobile {        
         display: inline-block;
     }
