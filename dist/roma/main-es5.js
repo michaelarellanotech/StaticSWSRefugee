@@ -409,7 +409,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"layout-menu-container\" (click)=\"onMenuClick($event)\" style=\"top: 70px;\">\n    <div class=\"menu-scroll-content\">\n        <div class=\"layout-profile\" *ngIf=\"app.inlineUser && !app.isHorizontal()\">\n                <a class=\"layout-profile-button\" (click)=\"app.onProfileClick($event)\">\n                    <img src=\"assets/layout/images/avatar.png\" alt=\"roma-layout\">\n                    <div class=\"layout-profile-userinfo\">\n                        <span class=\"layout-profile-name\">Arlene Welch</span>\n                        <span class=\"layout-profile-role\">Design Ops</span>\n                    </div>\n                </a>\n                <ul [@inline]=\"!app.isSlim() ? app.inlineUserMenuActive ? 'visibleAnimated' : 'hiddenAnimated' : app.inlineUserMenuActive ? 'visible' : 'hidden'\" class=\"layout-profile-menu\">\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-user\"></i><span>Profile</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-cog\"></i><span>Settings</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-envelope\"></i><span>Messages</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-bell\"></i><span>Notifications</span>\n                        </a>\n                    </li>\n                </ul>\n        </div>\n        <ul class=\"layout-menu\">\n            <li app-menuitem *ngFor=\"let item of model; let i = index;\" [item]=\"item\" [index]=\"i\" [root]=\"true\"></li>\n        </ul>\n    </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"layout-menu-container\" (click)=\"onMenuClick($event)\" style=\"top: 70px;\">\n    <div class=\"menu-scroll-content\">\n        <!-- <div class=\"layout-profile\" *ngIf=\"app.inlineUser && !app.isHorizontal()\">\n                <a class=\"layout-profile-button\" (click)=\"app.onProfileClick($event)\">\n                    <img src=\"assets/layout/images/avatar.png\" alt=\"roma-layout\">\n                    <div class=\"layout-profile-userinfo\">\n                        <span class=\"layout-profile-name\">Arlene Welch</span>\n                        <span class=\"layout-profile-role\">Design Ops</span>\n                    </div>\n                </a>\n                <ul [@inline]=\"!app.isSlim() ? app.inlineUserMenuActive ? 'visibleAnimated' : 'hiddenAnimated' : app.inlineUserMenuActive ? 'visible' : 'hidden'\" class=\"layout-profile-menu\">\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-user\"></i><span>Profile</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-cog\"></i><span>Settings</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-envelope\"></i><span>Messages</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-bell\"></i><span>Notifications</span>\n                        </a>\n                    </li>\n                </ul>\n        </div> -->\n        <ul class=\"layout-menu\">\n            <li app-menuitem *ngFor=\"let item of model; let i = index;\" [item]=\"item\" [index]=\"i\" [root]=\"true\"></li>\n        </ul>\n    </div>\n</div>\n";
     /***/
   },
 
@@ -2054,35 +2054,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }, {
             label: 'About Us',
             icon: 'pi pi-fw pi-star',
-            routerLink: ['about'],
             items: [{
               label: 'Purpose',
               icon: 'pi pi-arrow-right',
-              routerLink: ['about/purpose']
+              routerLink: ['/about/purpose']
             }, {
               label: 'History',
               icon: 'pi pi-list',
-              routerLink: ['about/']
+              routerLink: ['/about/']
             }, {
               label: 'Achievement',
               icon: 'pi pi-check',
-              routerLink: ['about/']
+              routerLink: ['/about/']
             }, {
               label: 'Staff',
               icon: 'pi pi-users',
-              routerLink: ['about/']
+              routerLink: ['/about/']
             }, {
               label: 'Annual Summary',
               icon: 'pi pi-calendar',
-              routerLink: ['about/'],
+              routerLink: ['/about/'],
               items: [{
                 label: '2016/2017',
                 icon: 'pi pi-calendar-plus',
-                routerLink: ['about/annualsummary']
+                routerLink: ['/about/annualsummary']
               }, {
                 label: '2018/2019',
                 icon: 'pi pi-calendar-plus',
-                routerLink: ['about/annualsummary']
+                routerLink: ['/about/annualsummary']
               }]
             }]
           }, {
@@ -2349,8 +2348,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           } else {
             if (_this.item.routerLink) {
               _this.updateActiveStateFromRoute();
-            } else {
-              _this.active = false;
+            } else {// Bug Fix - Uncommenting this will cause the menu with sub-menu to retract - MA
+              //this.active = false;
             }
           }
         });
@@ -2404,6 +2403,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (this.app.isHorizontal() || this.app.isSlim()) {
               this.menuService.reset();
               this.app.menuHoverActive = false;
+            } //
+            // Bug fix - menu overlay mode not reseting after click - MA
+            //
+
+
+            if (this.app.overlayMenuActive || this.app.staticMenuMobileActive) {
+              this.app.hideOverlayMenu();
+              this.app.unblockBodyScroll();
             }
           }
         }
@@ -6634,7 +6641,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     PurposeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      template: "<h1>About RHS - Purpose</h1>\n                <p>The NSW Refugee Health Service aims to protect and promote the health of \n                    refugees and people of refugee-like backgrounds living in NSW.</p>\n                <p>Our Service:</p>\n                <div id=\"div\">\n                        <ul>\n                        <li>provides early health assessments by refugee health nurses for newly  arrived refugees </li>\n                        <li>educates health service providers on refugee health and related issues; </li>\n                        <li>acts as a link between agencies working with refugees and health services; </li>\n                        <li>provides targeted health promotion programs for refugees</li>\n                        <li>provides medical assessments and referrals through GP clinics, particularly for recent arrivals;</li>\n                        <li>facilitates and conducts research in refugee health; and</li>\n                        <li>advocates for health policies and appropriate services for refugees.</li>\n                    </ul></div>"
+      template: "<h1 class=\"page-title\">About RHS - Purpose</h1>\n                <p>The NSW Refugee Health Service aims to protect and promote the health of \n                    refugees and people of refugee-like backgrounds living in NSW.</p>\n                <p>Our Service:</p>\n                <div id=\"div\">\n                        <ul>\n                        <li>provides early health assessments by refugee health nurses for newly  arrived refugees </li>\n                        <li>educates health service providers on refugee health and related issues; </li>\n                        <li>acts as a link between agencies working with refugees and health services; </li>\n                        <li>provides targeted health promotion programs for refugees</li>\n                        <li>provides medical assessments and referrals through GP clinics, particularly for recent arrivals;</li>\n                        <li>facilitates and conducts research in refugee health; and</li>\n                        <li>advocates for health policies and appropriate services for refugees.</li>\n                    </ul></div>"
     })], PurposeComponent);
     /***/
   },

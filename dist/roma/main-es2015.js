@@ -357,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"layout-menu-container\" (click)=\"onMenuClick($event)\" style=\"top: 70px;\">\n    <div class=\"menu-scroll-content\">\n        <div class=\"layout-profile\" *ngIf=\"app.inlineUser && !app.isHorizontal()\">\n                <a class=\"layout-profile-button\" (click)=\"app.onProfileClick($event)\">\n                    <img src=\"assets/layout/images/avatar.png\" alt=\"roma-layout\">\n                    <div class=\"layout-profile-userinfo\">\n                        <span class=\"layout-profile-name\">Arlene Welch</span>\n                        <span class=\"layout-profile-role\">Design Ops</span>\n                    </div>\n                </a>\n                <ul [@inline]=\"!app.isSlim() ? app.inlineUserMenuActive ? 'visibleAnimated' : 'hiddenAnimated' : app.inlineUserMenuActive ? 'visible' : 'hidden'\" class=\"layout-profile-menu\">\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-user\"></i><span>Profile</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-cog\"></i><span>Settings</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-envelope\"></i><span>Messages</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-bell\"></i><span>Notifications</span>\n                        </a>\n                    </li>\n                </ul>\n        </div>\n        <ul class=\"layout-menu\">\n            <li app-menuitem *ngFor=\"let item of model; let i = index;\" [item]=\"item\" [index]=\"i\" [root]=\"true\"></li>\n        </ul>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"layout-menu-container\" (click)=\"onMenuClick($event)\" style=\"top: 70px;\">\n    <div class=\"menu-scroll-content\">\n        <!-- <div class=\"layout-profile\" *ngIf=\"app.inlineUser && !app.isHorizontal()\">\n                <a class=\"layout-profile-button\" (click)=\"app.onProfileClick($event)\">\n                    <img src=\"assets/layout/images/avatar.png\" alt=\"roma-layout\">\n                    <div class=\"layout-profile-userinfo\">\n                        <span class=\"layout-profile-name\">Arlene Welch</span>\n                        <span class=\"layout-profile-role\">Design Ops</span>\n                    </div>\n                </a>\n                <ul [@inline]=\"!app.isSlim() ? app.inlineUserMenuActive ? 'visibleAnimated' : 'hiddenAnimated' : app.inlineUserMenuActive ? 'visible' : 'hidden'\" class=\"layout-profile-menu\">\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-user\"></i><span>Profile</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-cog\"></i><span>Settings</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-envelope\"></i><span>Messages</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <i class=\"pi pi-fw pi-bell\"></i><span>Notifications</span>\n                        </a>\n                    </li>\n                </ul>\n        </div> -->\n        <ul class=\"layout-menu\">\n            <li app-menuitem *ngFor=\"let item of model; let i = index;\" [item]=\"item\" [index]=\"i\" [root]=\"true\"></li>\n        </ul>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -1366,16 +1366,16 @@ let AppMenuComponent = class AppMenuComponent {
         this.model = [
             { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/'] },
             {
-                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['about'],
+                label: 'About Us', icon: 'pi pi-fw pi-star',
                 items: [
-                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['about/purpose'] },
-                    { label: 'History', icon: 'pi pi-list', routerLink: ['about/'] },
-                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['about/'] },
-                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['about/'] },
-                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['about/'],
+                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['/about/purpose'] },
+                    { label: 'History', icon: 'pi pi-list', routerLink: ['/about/'] },
+                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['/about/'] },
+                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['/about/'] },
+                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['/about/'],
                         items: [
-                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] },
-                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] }
+                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['/about/annualsummary'] },
+                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['/about/annualsummary'] }
                         ]
                     }
                 ]
@@ -1536,7 +1536,8 @@ let AppMenuitemComponent = class AppMenuitemComponent {
                     this.updateActiveStateFromRoute();
                 }
                 else {
-                    this.active = false;
+                    // Bug Fix - Uncommenting this will cause the menu with sub-menu to retract - MA
+                    //this.active = false;
                 }
             }
         });
@@ -1577,6 +1578,13 @@ let AppMenuitemComponent = class AppMenuitemComponent {
             if (this.app.isHorizontal() || this.app.isSlim()) {
                 this.menuService.reset();
                 this.app.menuHoverActive = false;
+            }
+            //
+            // Bug fix - menu overlay mode not reseting after click - MA
+            //
+            if (this.app.overlayMenuActive || this.app.staticMenuMobileActive) {
+                this.app.hideOverlayMenu();
+                this.app.unblockBodyScroll();
             }
         }
     }
@@ -4147,7 +4155,7 @@ let PurposeComponent = class PurposeComponent {
 };
 PurposeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        template: `<h1>About RHS - Purpose</h1>
+        template: `<h1 class="page-title">About RHS - Purpose</h1>
                 <p>The NSW Refugee Health Service aims to protect and promote the health of 
                     refugees and people of refugee-like backgrounds living in NSW.</p>
                 <p>Our Service:</p>
