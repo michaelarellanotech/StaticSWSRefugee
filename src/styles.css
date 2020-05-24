@@ -102,11 +102,6 @@ div.block-ui-spinner > .loader {
   background-color: #f4f4f4 !important;
 }
 
-p, ul, li {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
 body {
   background: #FFF !important;
 }
@@ -149,24 +144,24 @@ body {
     margin-left: 340px;
   }
 }
-.footer-icons img {
+.layout-footer {
+  margin-top: 50px;
+}
+.layout-footer img {
+  height: 40px;
+}
+.layout-footer .footer-icons img {
   border: 1px solid #ddd;
   padding: 2px;
   border-radius: 8px;
 }
-
-.layout-footer img {
-  height: 40px;
-}
-
-.footer-logo1 {
+.layout-footer .footer-logo1 {
   width: 180px;
   height: auto !important;
   margin-right: 40px;
   margin-bottom: 15px;
 }
-
-.footer-logo2 {
+.layout-footer .footer-logo2 {
   width: 180px;
   height: auto !important;
   margin-bottom: 15px;
@@ -182,6 +177,13 @@ body {
     display: none;
   }
 }
-h1 {
+.layout-content p, .layout-content ul, .layout-content li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.layout-content h1 {
   color: #AD174F;
+}
+.layout-content h1.page-title {
+  margin-top: 0;
 }

@@ -38,16 +38,16 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/']},
             {
-                label: 'About Us', icon: 'pi pi-fw pi-star', routerLink: ['about'],
+                label: 'About Us', icon: 'pi pi-fw pi-star',
                 items: [
-                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['about/purpose']},
-                    { label: 'History', icon: 'pi pi-list', routerLink: ['about/'] },
-                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['about/'] },
-                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['about/'] },
-                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['about/'],
+                    { label: 'Purpose', icon: 'pi pi-arrow-right', routerLink: ['/about/purpose']},
+                    { label: 'History', icon: 'pi pi-list', routerLink: ['/about/'] },
+                    { label: 'Achievement', icon: 'pi pi-check', routerLink: ['/about/'] },
+                    { label: 'Staff', icon: 'pi pi-users', routerLink: ['/about/'] },
+                    { label: 'Annual Summary', icon: 'pi pi-calendar', routerLink: ['/about/'],
                         items: [
-                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] },
-                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['about/annualsummary'] }
+                            { label: '2016/2017', icon: 'pi pi-calendar-plus', routerLink: ['/about/annualsummary'] },
+                            { label: '2018/2019', icon: 'pi pi-calendar-plus', routerLink: ['/about/annualsummary'] }
                         ]
                     }
                 ]

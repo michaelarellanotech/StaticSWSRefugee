@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  template: `<h1>About RHS - Purpose</h1>
+  template: `<h1 class="page-title">About RHS - Purpose</h1>
                 <p>The NSW Refugee Health Service aims to protect and promote the health of 
                     refugees and people of refugee-like backgrounds living in NSW.</p>
                 <p>Our Service:</p>

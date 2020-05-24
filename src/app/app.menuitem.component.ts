@@ -106,7 +106,8 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
                     if (this.item.routerLink) {
                         this.updateActiveStateFromRoute();
                     } else {
-                        this.active = false;
+                        // Bug Fix - Uncommenting this will cause the menu with sub-menu to retract - MA
+                        //this.active = false;
                     }
                 }
             });
@@ -156,6 +157,15 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
                 this.menuService.reset();
                 this.app.menuHoverActive = false;
             }
+
+            //
+            // Bug fix - menu overlay mode not reseting after click - MA
+            //
+            if (this.app.overlayMenuActive || this.app.staticMenuMobileActive) {
+                this.app.hideOverlayMenu();
+                this.app.unblockBodyScroll();
+            }
+            
         }
     }
 
