@@ -84,24 +84,6 @@ import {AppMenuitemComponent} from './app.menuitem.component';
 import { AppRightMenuComponent } from './app.right-menu.component';
 import { AppTopBarComponent } from './app.topbar.component';
 import { AppFooterComponent } from './app.footer.component';
-import { DashboardDemoComponent } from './demo/view/dashboarddemo.component';
-import { SampleDemoComponent } from './demo/view/sampledemo.component';
-import { FormsDemoComponent } from './demo/view/formsdemo.component';
-import { DataDemoComponent } from './demo/view/datademo.component';
-import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
-import { OverlaysDemoComponent } from './demo/view/overlaysdemo.component';
-import { MenusDemoComponent } from './demo/view/menusdemo.component';
-import { MessagesDemoComponent } from './demo/view/messagesdemo.component';
-import { MiscDemoComponent } from './demo/view/miscdemo.component';
-import { EmptyDemoComponent } from './demo/view/emptydemo.component';
-import { ChartsDemoComponent } from './demo/view/chartsdemo.component';
-import { FileDemoComponent } from './demo/view/filedemo.component';
-import { DocumentationComponent } from './demo/view/documentation.component';
-
-import { CarService } from './demo/service/carservice';
-import { CountryService } from './demo/service/countryservice';
-import { EventService } from './demo/service/eventservice';
-import { NodeService } from './demo/service/nodeservice';
 import { MenuService } from './app.menu.service';
 import { HomeComponent } from './staticpages/home.component';
 import { PurposeComponent } from './staticpages/purpose.component';
@@ -187,21 +169,7 @@ import { PurposeComponent } from './staticpages/purpose.component';
         AppConfigComponent,
         AppRightMenuComponent,
         AppTopBarComponent,
-        AppFooterComponent,
-        DashboardDemoComponent,
-        SampleDemoComponent,
-        FormsDemoComponent,
-        DataDemoComponent,
-        PanelsDemoComponent,
-        OverlaysDemoComponent,
-        MenusDemoComponent,
-        MessagesDemoComponent,
-        MessagesDemoComponent,
-        MiscDemoComponent,
-        ChartsDemoComponent,
-        EmptyDemoComponent,
-        FileDemoComponent,
-        DocumentationComponent,
+        AppFooterComponent,        
         AppNotfoundComponent,
         AppErrorComponent,
         AppAccessdeniedComponent,
@@ -211,8 +179,7 @@ import { PurposeComponent } from './staticpages/purpose.component';
         PurposeComponent
     ],
     providers: [
-        { provide: LocationStrategy, useClass: HashLocationStrategy },
-        CarService, CountryService, EventService, NodeService, MenuService
+        { provide: LocationStrategy, useClass: HashLocationStrategy }, MenuService
     ],
     bootstrap: [AppComponent]
 })
