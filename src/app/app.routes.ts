@@ -2,9 +2,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { AppMainComponent } from './app.main.component';
 import { AppNotfoundComponent } from './pages/app.notfound.component';
-import { AppErrorComponent } from './pages/app.error.component';
-import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
-import { AppLoginComponent } from './pages/app.login.component';
+// import { AppErrorComponent } from './pages/app.error.component';
+// import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
+// import { AppLoginComponent } from './pages/app.login.component';
 import { HomeComponent } from './staticpages/home.component';
 import { PurposeComponent } from './staticpages/purpose.component';
 
@@ -28,10 +28,10 @@ export const routes: Routes = [
             // { path: 'documentation', component: DocumentationComponent }
         ]
     },
-    {path: 'error', component: AppErrorComponent},
-    {path: 'accessdenied', component: AppAccessdeniedComponent},
+    //{path: 'error', component: AppErrorComponent},
+    //{path: 'accessdenied', component: AppAccessdeniedComponent},
     {path: '404', component: AppNotfoundComponent},
-    {path: 'login', component: AppLoginComponent},
+    //{path: 'login', component: AppLoginComponent},
     {path: '**', redirectTo: '/404'},
 
 ];
