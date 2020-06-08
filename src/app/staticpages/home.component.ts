@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,23 +9,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
             border-radius: 3px;
             margin: 0.3em;
             text-align: center;
-            /*padding: 2em 0 2.25em 0;*/
             padding: 3px;
         }
-        /* .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-title {
-            font-weight: 700;
-            font-size: 20px;
-            margin-top: 24px;
-        }
-        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data .car-subtitle {
-            margin: 0.25em 0 2em 0;
-        }
-        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button {
-            margin-left: 0.5em;
-        }
-        .home-page .ui-carousel .ui-carousel-content .ui-carousel-item .car-data button:first-child {
-            margin-left: 0;
-        } */
         .home-page .ui-carousel.custom-carousel .ui-carousel-dot-icon {
             width: 16px !important;
             height: 16px !important;
@@ -40,7 +25,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     `],
     encapsulation: ViewEncapsulation.None
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   responsiveOptions;
   pics = [
@@ -75,8 +60,4 @@ export class HomeComponent implements OnInit {
   ];
 
   }
-
-  ngOnInit() {
-  }
-
 }
